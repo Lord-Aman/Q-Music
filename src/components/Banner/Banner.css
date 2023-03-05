@@ -1,0 +1,16 @@
+.banner-container{
+    height: auto;
+    padding: 5rem;
+    color:#fff;
+    background: radial-gradient(161.3% 161.3% at 50% 50%, #121212 44.79%, #34C94B 83.33%) !important;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-text{
+    max-width:50%;
+    font-size:3rem;
+    margin-top:1.25rem;
+    margin-bottom:1.25rem;
+}
