@@ -1,0 +1,10 @@
+.carousel_left_navigation{
+    position:absolute;
+    z-index: 1;
+    top:35%;
+    left:0;
+}
+
+.swipe_button{
+    cursor:pointer
+}

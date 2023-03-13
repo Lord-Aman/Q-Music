@@ -4,49 +4,28 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import styles from "./Accordion.module.css";
 
-export default function SimpleAccordion() {
+export default function SimpleAccordion({ data }) {
   return (
-    <div>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>Accordion 1</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography>Accordion 2</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion disabled>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel3a-content"
-          id="panel3a-header"
-        >
-          <Typography>Disabled Accordion</Typography>
-        </AccordionSummary>
-      </Accordion>
+    <div className={styles.accordion_container}>
+      {data &&
+        data.map((ele, index) => (
+          <Accordion key={index.toString()} className={styles.accordion}>
+            <AccordionSummary
+              className={styles.accordion_summary}
+              expandIcon={<ExpandMoreIcon className={styles.expand_button} />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              {/* Problem Statement  */}
+              <Typography>{ele.question}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>{ele.answer}</Typography>
+            </AccordionDetails>
+          </Accordion>
+        ))}
     </div>
   );
 }

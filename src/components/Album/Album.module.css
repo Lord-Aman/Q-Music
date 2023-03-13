@@ -1,0 +1,30 @@
+.album_container{
+    padding:14px;
+}
+
+.album_container_header{
+    display:flex;
+    justify-content: space-between;
+}
+
+.album_title{
+    color:#fff;
+}
+
+.album_button{
+    color:green;
+    font-size:20px;
+    font-weight:600;
+    background:black;
+    border:none;
+}
+
+.album_button:hover{
+    cursor:pointer;
+}
+
+.album_card_container{
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+}
