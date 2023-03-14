@@ -8,7 +8,6 @@ import CarouselRightNavigation from "./CarouselRightNavigation/CarouselRightNavi
 import CarouselLeftNavigation from "./CarouselLeftNavigation/CarouselLeftNavigation";
 
 export default ({ data, renderComponent }) => {
-  console.log("Data in carousel", data);
   return (
     <Swiper
       className={styles.swiper}

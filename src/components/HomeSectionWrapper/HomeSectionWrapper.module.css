@@ -1,5 +1,6 @@
 .album_container{
     padding:14px;
+    border-bottom:1px solid green;
 }
 
 .album_container_header{
@@ -28,3 +29,12 @@
     width:100%;
     flex-wrap: wrap;
 }
+
+.tabs {
+    background-color: black;
+    color: #fff;
+  }
+  
+  .indicator {
+    background-color:green;
+  }

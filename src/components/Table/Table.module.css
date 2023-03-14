@@ -1,0 +1,51 @@
+
+
+.table{
+    min-width:650px;
+    table-layout: fixed;
+}
+
+.table_row{
+    background-color: black;
+    color:#fff;
+    
+}
+
+.table_cell{
+    color:#fff;
+}
+
+.song_image_title_container{
+    display: flex;
+}
+
+.song_image{
+    width:60px;
+    height:60px;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+.song_title{
+    align-self:center;
+}
+
+
+.pagination{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.pageButton{
+    margin: 0px 2px;
+    min-width: 10px !important;
+    border-radius: 15px;
+    padding:1px 8px !important;
+}
+
+.navigate_buttons{
+    color:black;
+    background-color: #fff;
+    border-radius: 15px;
+}
