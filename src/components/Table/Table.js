@@ -73,7 +73,7 @@ export default function TableWithPagination({ data }) {
                 style={{ textAlign: "center" }}
                 className={styles.table_cell}
               >
-                Artist
+                Artists
               </TableCell>
               <TableCell
                 style={{ textAlign: "right" }}
@@ -102,7 +102,7 @@ export default function TableWithPagination({ data }) {
                     style={{ textAlign: "center" }}
                     className={styles.table_cell}
                   >
-                    {row.artists[0]}
+                    {row.artists.join(", ")}
                   </TableCell>
                   <TableCell
                     style={{ textAlign: "right" }}
